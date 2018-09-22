@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Slider</title>
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="fscSlider.css" />
+
+	<!-- Load Javascript -->
+
+	<!-- Load jQuery and the load fscSlider.js  -->
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="fscSlider.js"></script>
+
+
+	<script type="text/javascript">
+		//This code activates the slider
+
+		//NOTE: data-tootipheader and data-tooltipcontent must be filled 
+		//to provide a tootip for the slider
+
+		$(function() {
+			$(".fscSlider").fscSlider({
+				//Options here. Check fscSlider.js file for supported options
+
+				slideWidth: 600,
+                slideHeight: 300,
+                slideSpeed: 350
+			});
+		});
+
+		//alert("Hello");
+
+	</script>
+	
+</head>
+<body>
+<section class="fscslider">
+
+		<img src="image1.jpg" data-tooltipheader="Pirate one of the caribians an mars pay" data-tooltipcontent="Lorem ipsum dolor si amet conservateur de amot.">
+
+		<img src="image2.jpg" data-tooltipheader="Pirate two showcasing unity an king " data-tooltipcontent="Lorem ipsum dolor sit amet conservateur de amot.">
+
+</section>
+
+</body>
+</html>
